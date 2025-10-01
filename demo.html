@@ -1,23 +1,9 @@
 <!doctype html>
 <meta charset="utf-8" />
-<title>A11y Demo</title>
+<title>A11y Widget – Demo</title>
 <h1>Demo</h1>
-<p>Page should auto-open the panel on load.</p>
-
-<!-- Load the built widget -->
-<script src="./dist/a11y-widget.min.js"></script>
-
-<!-- Init AFTER loading the script -->
+<p>Alt/Option + Shift + A opens the panel.</p>
+<script src="dist/a11y-widget.min.js"></script>
 <script>
-  if (window.A11yWidget) {
-    A11yWidget.init({
-      accent:'#1e88e5',
-      bottom:'24px',
-      sideOffset:'24px',
-      zIndex: 2147483647,
-      defaultOpen: true
-    });
-  } else {
-    document.body.insertAdjacentHTML('beforeend','<p style="color:red">A11yWidget not found</p>');
-  }
+  A11yWidget.init({ accent:'#1e88e5', defaultOpen:true });
 </script>
