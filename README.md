@@ -106,7 +106,6 @@ Local demo (dev)
 npm install
 npm run build
 npm run serve
-# open http://localhost:5173/demo.html
 
 ## Versioning & CDN
 
