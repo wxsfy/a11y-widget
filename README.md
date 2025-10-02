@@ -19,14 +19,16 @@ Keyboard: Option(⌥)+Shift(⇧)+A opens, Esc closes
 Prefs persist (localStorage)
 
 ## Options (A11yWidget.init({...}))
-Option	Type	Default	Notes
-accent	string	#1e88e5	Button/focus color
-bottom	string	24px	Distance from bottom
-sideOffset	string	24px	Distance from right/left
-zIndex	number	999999	Increase if your site has overlays
-readVoice	string|null	null	Exact TTS voice name (optional)
-styleNonce	string	undefined	Set if your CSP requires a nonce
-defaultOpen	boolean	false	Open panel on page load
+| Option        | Type        | Default     | Notes                              |
+| ------------- | ----------- | ----------- | ---------------------------------- |
+| `accent`      | string      | `#1e88e5`   | Button/focus color                 |
+| `bottom`      | string      | `24px`      | Distance from bottom               |
+| `sideOffset`  | string      | `24px`      | Distance from right/left           |
+| `zIndex`      | number      | `999999`    | Increase if your site has overlays |
+| `readVoice`   | string|null | `null`      | Exact TTS voice name (optional)    |
+| `styleNonce`  | string      | `undefined` | Set if your CSP requires a nonce   |
+| `defaultOpen` | boolean     | `false`     | Open panel on page load            |
+
 ## Public API
 A11yWidget.api.open()
 
