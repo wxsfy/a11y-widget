@@ -2,44 +2,6 @@
 
 Drop-in accessibility widget for any website: text size (+/−/reset), themes (default / high-contrast / dark / sepia), OpenDyslexic toggle, Read-Aloud (TTS), and basic voice commands.
 
-> **CDN:**  
-> `https://cdn.jsdelivr.net/gh/wxsfy/a11y-widget@v0.3.1/dist/a11y-widget.min.js`
-
----
-
-## Quick start
-
-Paste **before** `</body>` on any site:
-
-```html
-<script src="https://cdn.jsdelivr.net/gh/wxsfy/a11y-widget@v0.3.1/dist/a11y-widget.min.js" defer></script>
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    A11yWidget.init({
-      accent:'#1e88e5',
-      bottom:'24px',
-      sideOffset:'24px',
-      zIndex:2147483647
-      // defaultOpen:true
-    });
-  });
-</script>
-
-One-block async loader (for non-technical sites):
-
-<script>
-(function(w,d,u,g,opts){
-  var s=d.createElement('script'); s.src=u; s.async=true;
-  s.onload=function(){ w[g]&&w[g].init && w[g].init(opts); };
-  d.head.appendChild(s);
-})(window, document,
-  "https://cdn.jsdelivr.net/gh/wxsfy/a11y-widget@v0.3.1/dist/a11y-widget.min.js",
-  "A11yWidget",
-  { accent:"#1e88e5", bottom:"24px", sideOffset:"24px", zIndex:2147483647 }
-);
-</script>
-```
-
 ## Features
 
 Text size controls with live % label
