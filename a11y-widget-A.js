@@ -153,6 +153,10 @@
   }
   [data-theme="sepia"] #text-display {
     color: #5b4636;
+ [data-theme="dark"] #text-display,
+  [data-theme="contrast"] #text-display {
+    color: #000;
+  }
   }
   `;
   document.head.appendChild(css);
