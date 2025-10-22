@@ -208,3 +208,19 @@
     if (e.key === "Escape") panel.classList.remove("active");
   });
 })();
+
+// Expose init method via global object for external initialization
+window.A11yWidget = {
+  init: function(options = {}) {
+    const accent = options.accent || '#0078d7';
+    const defaultOpen = options.defaultOpen || false;
+    // Set accent color on button if loaded
+    const btn = document.getElementById('techui-a11y-btn');
+    if (btn) btn.style.background = accent;
+    // Open panel by default if requested
+    if (defaultOpen) {
+      const panel = document.getElementById('techui-a11y-panel');
+      if (panel) panel.classList.add('active');
+    }
+  }
+};
