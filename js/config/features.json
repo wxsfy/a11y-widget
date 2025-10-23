@@ -1,0 +1,5 @@
+{
+  "A": ["core"],
+  "AA": ["core", "voice"],
+  "AAA": ["core", "voice", "physical"]
+}
